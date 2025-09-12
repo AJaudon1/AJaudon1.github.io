@@ -1,6 +1,72 @@
+/*
+CSS For my personal website
 
-body{background-color:black}
+Going for a darker, sleek design
+*/
 
-h1{color:white}
+html, body{
+    padding:0;
+    margin:0;
+    background-color:#0A0A0A;
+    font-family:"Cascadia Code", serif;
+    color: white;
+}
 
-p{color:white}
+section{
+    padding:25px;
+    margin:50px;
+    margin-left:350px;
+    margin-right:350px;
+    border-width: 10px;
+    border-radius:20px;
+    border-style:solid;
+    border-color: rgb(45, 45, 45);
+}
+
+nav{
+    padding:10px;
+    margin:50px;
+    margin-left:10px;
+    border-width: 10px;
+    border-radius:20px;
+    border-style:solid;
+    border-color: rgb(45, 45, 45);
+
+    display: flex;
+    align-items:center;
+    gap:300px;
+}
+
+aside{
+    padding:25px;
+    margin:50px;
+    margin-left:350px;
+    margin-right:350px;
+    border-width: 10px;
+    border-radius:20px;
+    border-style:solid;
+    border-color: darkred;
+}
+
+h1{
+    text-align: center;
+    font-size: 54pt;
+}
+
+h2{
+    font-size: 30pt;
+}
+
+a{
+    font-size: 30px;
+}
+
+h3{
+    font-size: 20pt;
+}
+
+p{
+    font-size: 18pt;
+}
+
+
