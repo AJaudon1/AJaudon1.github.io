@@ -1,11 +1,188 @@
 /*
-CSS For my personal website
+Alston Jaudon
 
-Going for a darker, sleek design
+CSS For my personal website
 */
 
+/* Small devices (phones) */
+@media (max-width: 600px) {
+    
+    h1, h2, h3, h4, h5, h6{
+        font-size:6vw;
+    }
+    
+    p{
+        font-size: 4vw;
+    }
 
+    a{
+        font-size: 4vw;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
 
+    nav{
+        height: 8%;
+        position: sticky;
+        top:0;
+        z-index: 1;
+        display:flex;
+        align-items:center;
+        justify-content: space-evenly;
+        background-color:#1a1a1a;
+    }
+
+    main{
+        width:95%;
+        margin:auto;
+        flex:1;
+    }
+
+    #resume h2, #resume p, #resume li{
+        font-size: 70%;
+        margin:auto;
+        padding:0;
+    }
+
+    #resume a{
+        font-size:1em;
+        padding:0;
+        text-decoration: underline;
+    }
+
+    .circle_pic{
+        width: 35vw;
+        height: 35vw;
+    }
+
+    .project_figure{
+        width:90%;
+    }
+}
+
+/* Medium devices (tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    
+    h1, h2, h3, h4, h5, h6{
+        font-size:4vw;
+    }
+    
+    p{
+        font-size: 2.5vw;
+    }
+
+    a{
+        font-size: 2.5vw;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    nav{
+        height:9%;
+        position:sticky;
+        top:0;
+        z-index: 1;
+        display:flex;
+        align-items:center;
+        justify-content: space-evenly;
+        background-color:#1a1a1a;    
+    }
+    
+    main{
+        width:85%;
+        margin:auto;
+        flex:1;
+    }
+
+    #resume h2, #resume p, #resume li{
+        font-size: 80%;
+        margin:auto;
+        padding:0;
+    }
+
+    #resume a{
+        font-size:1em;
+        padding:0;
+        text-decoration: underline;
+    }
+
+    .circle_pic{
+        width: 25vw;
+        height: 25vw;
+    }
+
+    .project_figure{
+        width:75%;
+    }
+}
+
+/* Large devices (desktops) */
+
+/* Concerned with font sizes, nav structure, main width, section width and display */
+
+@media (min-width: 1025px) {
+    
+    h1, h2, h3, h4, h5, h6{
+        font-size:2vw;
+    }
+    
+    p{
+        font-size: 1.5vw;
+    }
+
+    a{
+        font-size: 1.5vw;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    nav{
+        height:10%;
+        position:sticky;
+        top:0;
+        z-index: 1;
+        display:flex;
+        align-items:center;
+        justify-content: space-evenly;
+        background-color:#1a1a1a;    
+    }
+
+    main{
+        width:50%;
+        margin: auto;
+        flex:1;
+    }
+
+    #resume h2, #resume p, #resume li{
+        font-size: 85%;
+        margin:auto;
+    padding:0;
+    }
+
+    #resume a{
+        font-size:1em;
+        padding:0;
+        text-decoration: underline;
+    }
+
+    .circle_pic{
+        width: 15vw;
+        height: 15vw;
+    }
+
+    .project_figure{
+        width:50%;
+    }
+}
+
+/*Global styles, unchanging features for every device size.
+  More concerned with actual design and colors than layout*/
 
 html, body{
     padding:0;
@@ -13,25 +190,14 @@ html, body{
     height:100%;
     background-color:#1F1F1F;
     font-family:"Helvetica", sans-serif;
-    font-size: 1.5vw;
     color: white;
     scroll-behavior: smooth;
-}
+    }
 
-h1, h2, h3, h4, h5, h6{
-    font-size:2vw;
-}
-
-p{
-    font-size: 1.5vw;
-}
-
-a{
-    font-size: 1.5vw;
+a:link{
     color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+    transition-delay: .1s;
+    transition-duration: .5s;
 }
 
 a:hover{
@@ -40,14 +206,81 @@ a:hover{
     transition-duration: .5s;
 }
 
-header{
-    font-family:"Cascadia Code", serif;
+a:active{
+    color: rgb(83, 165, 119);
 }
 
-main{
-    width:50%;
+header{
+    font-family:"Cascadia Code", serif;
+}    
+
+.project_main{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+     
+}
+
+section{
+    width:100%;
+}
+
+/*General form for boxes*/
+
+.content_box{
+    width:85%;
+    margin: auto;
+    box-sizing:border-box;
+    border: 10px solid;
+    border-color: #1a1a1a;
+    border-radius: 10%;
+    padding: 3%;
+    margin-top:5%;
+    margin-bottom:5%;
+}
+
+.content_box a{
+    display:block;
+    text-decoration: underline;
+    text-align: right;
+}
+
+#biography{
+    width: 100%;
+    box-sizing: border-box;
+    border: 10px solid;
+    border-color: #1a1a1a;
+    border-radius: 10%;
+    padding: 5%;
+    margin-bottom:5%;
+    margin-top: 5%;
+}
+
+#resume{
+    font-family: "Times New Roman", serif;
+    width: 100%;
+    box-sizing: border-box;
+    border: 10px solid;
+    border-color: #1a1a1a;
+    padding: 5%;
+    margin-top:5%;
+    margin-bottom:5%;
+}
+
+#resume h1{
+    width:fit-content;
+    display:block;
     margin:auto;
-    flex:1;
+} 
+
+.resume_links{
+    text-align:center;
+}
+
+.dot{
+    margin:0 8px;
+    display:inline-block;
 }
 
 footer{
@@ -60,61 +293,50 @@ footer{
 }
 
 .footer_text{
-    font-size:50%
+    font-size:75%
 }
 
-section{
-   
-    border-color: rgb(45, 45, 45);
+footer a{
+    text-decoration: underline;
 }
 
-nav{
-    height:5vw;
-    position:sticky;
-    top:0;
-    z-index: 1;
-    display:flex;
-    align-items:center;
-    justify-content: space-evenly;
-    background-color:#1a1a1a;
-    
+/* CSS picture style using ChatGPT */
+.circle_pic{
+    object-fit: cover;
+    object-position:0% 0%;
+    border-radius: 50%;
+    border: 6px solid white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    display:block;
+    margin:auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 
-nav a{
-    font-size: 1.5vw;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+.content_box_img{
+  width: 100%;      
+  height: auto;         
+  display: block;          
+  border-top-left-radius: 10%;  
+  border-top-right-radius: 10%;
+  object-fit: cover;
+  overflow: hidden;
 }
 
-nav a:link {
-    color: white;
-    transition-delay: .1s;
-    transition-duration: .5s;
+.project_figure{
+    margin:auto;
+    height:auto;
 }
 
-nav a:visited {
-  color: white;
+.project_figure img{
+    width: 100%;      
+    height: auto;         
+    display: block;
+    object-fit: cover;
+    overflow: hidden;
 }
 
-nav a:hover{
-    color: seagreen;
-    transition-delay: .1s;
-    transition-duration: .5s;
+.project_figure figcaption{
+    font-size:0.8em;
 }
-
-nav a:active {
-  color: white;
-}
-
-.float_right{
-    float: right;
-}
-
-.float_left{
-    float: left;
-}
-
-
 

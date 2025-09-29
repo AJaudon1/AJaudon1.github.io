@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Alston Jaudon's Site</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <link rel="stylesheet" type="text/css" href="personal.css">
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+        <script src="https://kit.fontawesome.com/fc38b5a3bd.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+
+        <header id="intro">
+            <p>&gt;Alston Jaudon_</p>
+        </header>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="resume.html">Resume</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+         
+        <main>
+
+            <section id="biography">
+                
+                <h2>Click The Square</h2>
+                <p>After learning about how pygame could render shapes onto the screen and how 
+                    there were also functions for mouse interaction, I knew I wanted to make a game with it.
+                </p>
+
+                <p>The first thing I did was create classes for the buttons and squares that are interactible in the game.
+                    I also used event listeners to take location data from the mouse and react accordingly when the user clicks on
+                     one of these.  
+                </p>
+
+                <figure class="project_figure">
+                    <img src="images/menu.jpg" alt="Click The Square main menu"/>
+                    <figcaption>Main menu of Click The Square</figcaption>
+                </figure>
+                
+                <p>For gameplay, I used a function to draw the grid based on a size chosen in the game settings. 
+                    After beginning, a random square is chosen to light up red. The square will light up green if the mouse clicks over 
+                    that square; a miss will end the game immediately. The game will also end if the timer reaches zero.
+                </p>
+
+                <figure class="project_figure">
+                    <img src="images/gamegrid.jpg" alt="Click The Square gameplay grid"/>
+                    <figcaption>Game grid for Click The Square</figcaption>
+                </figure>
+
+                <p>Im satisfied with the way it turned out but i know I can add more features in the future.
+                    My ultimate goal would be to turn this into a mobile game.
+                </p>
+
+                <p>Here are some of the skills I learned by working on this project</p>
+
+                <ul>
+                    <li>Object Oriented Programming</li>
+                    <li>pygame</li>
+                    <li>event listeners</li>
+                    <li>various functions (draw, rand, get_ticks, mixer)</li>
+                </ul>
+
+            </section>
+
+        </main>
+
+        <footer>
+            <p class="footer_text">2025 Alston Jaudon</p>
+            <a href="#intro" class="footer_text">^ Jump to top ^</a>
+        </footer>
+
+    </body>
+
+</html>
